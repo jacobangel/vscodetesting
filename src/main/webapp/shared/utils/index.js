@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   log: (message) => {
     console.log(message);
   }

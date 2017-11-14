@@ -5,6 +5,17 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "paths": {
-    }
+      "*": [
+        "*"
+      ],
+      "utils/*": [
+         "src/utils/*",
+         "src/shared/utils/*",
+         "src/main/webapp/shared/utils/*"
+       ],
+      "config/*": [
+         "src/shared/config/*"
+      ]
+     }
   }
 }

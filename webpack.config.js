@@ -12,7 +12,7 @@ const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-	entry: './sr	index.js',
+	entry: './src/index.js',
 
 	output: {
 		filename: '[name].bundle.js',
@@ -33,5 +33,7 @@ module.exports = {
 		]
 	},
 
-	plugins: [new UglifyJSPlugin()]
+	resolve: {
+		modules: ["node_modules", "shared"]
+	},
 };

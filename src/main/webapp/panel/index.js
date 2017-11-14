@@ -1,5 +1,9 @@
-const common = require('common.js');
-const util = require('../shared/utils/index');
-const lodash = require('lodash');
+const common = require('config/common');
+const util = require('utils/index');
+const get = require('lodash/get');
 
-util.log(lodash.get(common, 'settings.env'));
+const main = () => {
+  util.log(get(common, 'settings.env'));
+};
+
+module.exports = main;
