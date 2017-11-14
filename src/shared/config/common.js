@@ -1,5 +1,5 @@
 module.exports = {
   settings: {
-    env: 'prod'
+    env: 'you are a true champion'
   }
 }
